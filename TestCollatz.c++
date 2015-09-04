@@ -29,11 +29,17 @@ using namespace std;
 // read
 // ----
 
-TEST(CollatzFixture, read) {
+TEST(CollatzFixture, read_1) {
     string s("1 10\n");
     const pair<int, int> p = collatz_read(s);
-    ASSERT_EQ( 1, p.first);
+    ASSERT_EQ(1, p.first);
     ASSERT_EQ(10, p.second);}
+
+TEST(CollatzFixture, read_2) {
+    string s("1 999999\n");
+    const pair<int, int> p = collatz_read(s);
+    ASSERT_EQ(1, p.first);
+    ASSERT_EQ(999999, p.second);}
 
 // ----
 // eval
@@ -54,6 +60,22 @@ TEST(CollatzFixture, eval_3) {
 TEST(CollatzFixture, eval_4) {
     const int v = collatz_eval(900, 1000);
     ASSERT_EQ(174, v);}
+
+TEST(CollatzFixture, eval_5) {
+    const int v = collatz_eval(1, 1);
+    ASSERT_EQ(1, v);}
+
+TEST(CollatzFixture, eval_6) {
+    const int v = collatz_eval(1, 2);
+    ASSERT_EQ(2, v);}
+
+TEST(CollatzFixture, eval_7) {
+    const int v = collatz_eval(999999, 999999);
+    ASSERT_EQ(259, v);}
+
+TEST(CollatzFixture, eval_8) {
+    const int v = collatz_eval(999998, 999999);
+    ASSERT_EQ(259, v);}
 
 // -----
 // print
