@@ -49,6 +49,7 @@ int collatz_eval (int i, int j) {
         int a = i;
         int c = 1;
         while (a > 1) {
+            assert(a > 0);
             if ((a % 2) == 0)
                 a = (a / 2);
             else
