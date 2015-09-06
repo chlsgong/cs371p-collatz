@@ -1,20 +1,8 @@
-// ----------------------------
-// projects/collatz/Collatz.c++
-// Copyright (C) 2015
-// Glenn P. Downing
-// ----------------------------
-
-// --------
-// includes
-// --------
-
 #include <cassert>  // assert
 #include <iostream> // endl, istream, ostream
 #include <sstream>  // istringstream
 #include <string>   // getline, string
 #include <utility>  // make_pair, pair
-
-#include "Collatz.h"
 
 using namespace std;
 
@@ -40,9 +28,9 @@ int collatz_eval (int i, int j) {
     assert(j > 0);
     assert(j < 1000000);
     if (i > j) {
-        int temp = i;
-        i = j;
-        j = temp;
+    	int temp = i;
+    	i = j;
+    	j = temp;
     }
     int max = 0;
     for( ; i <= j; i++) {
@@ -59,7 +47,8 @@ int collatz_eval (int i, int j) {
             max = c;
     }
     assert(max > 0);
-    return max;}
+    return max;
+}
 
 // -------------
 // collatz_print
@@ -80,3 +69,12 @@ void collatz_solve (istream& r, ostream& w) {
         const int            j = p.second;
         const int            v = collatz_eval(i, j);
         collatz_print(w, i, j, v);}}
+
+// ----
+// main
+// ----
+
+int main () {
+    using namespace std;
+    collatz_solve(cin, cout);
+    return 0;}
