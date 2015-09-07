@@ -36,10 +36,10 @@ TEST(CollatzFixture, read_1) {
     ASSERT_EQ(10, p.second);}
 
 TEST(CollatzFixture, read_2) {
-    string s("1 999999\n");
+    string s("1 99999\n");
     const pair<int, int> p = collatz_read(s);
     ASSERT_EQ(1, p.first);
-    ASSERT_EQ(999999, p.second);}
+    ASSERT_EQ(99999, p.second);}
 
 // ----
 // eval
@@ -101,9 +101,9 @@ TEST(CollatzFixture, solve) {
 
 
 
-% valgrind TestCollatz                                         >  TestCollatz.out 2>&1
-% gcov -b Collatz.c++     | grep -A 5 "File 'Collatz.c++'"     >> TestCollatz.out
-% gcov -b TestCollatz.c++ | grep -A 5 "File 'TestCollatz.c++'" >> TestCollatz.out
+valgrind ./TestCollatz                                         >  TestCollatz.out 2>&1
+gcov -b Collatz.c++     | grep -A 5 "File 'Collatz.c++'"     >> TestCollatz.out
+gcov -b TestCollatz.c++ | grep -A 5 "File 'TestCollatz.c++'" >> TestCollatz.out
 
 
 
