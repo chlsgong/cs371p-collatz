@@ -1,0 +1,101 @@
+commit 8ee210a279da4260846487c6c776260cf50701d0
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Wed Sep 9 10:50:54 2015 -0500
+
+    added cache to SphereCollatz and confirmed acceptance on Sphere
+
+commit 01acd03b5e7c3532841b42a0c91f4458e26fe394
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Wed Sep 9 10:40:30 2015 -0500
+
+    changed 'EID' to 'hcg359' in makefile
+
+commit 8410a5240b9087fb3589477b58dc8a9d76b22f88
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Wed Sep 9 10:34:31 2015 -0500
+
+    uncommented 'EID' files in makefile
+
+commit 321780d75d4997dd505fbc016160a7baf3184040
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Wed Sep 9 10:31:54 2015 -0500
+
+    changed array to vector for cache storage close #14 #18
+
+commit 2b0117cb42ff23c54c51d380dc1c35c0ed3e6c94
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Tue Sep 8 21:19:16 2015 -0500
+
+    changed one acceptance test that caused overflow
+
+commit 95a92ee1e4149233068ab4339191144188b44575
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Mon Sep 7 18:07:06 2015 -0500
+
+    updated acceptance tests close #17
+
+commit e42cd960e6e99e3c9feb14e7304df8b1e750aaac
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Sun Sep 6 17:33:27 2015 -0500
+
+    added acceptance tests
+
+commit 52f80f8b78f61cbf3a470d7690821325e054af78
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Sat Sep 5 19:32:57 2015 -0500
+
+    checked for i > j and changed some unit tests closes #15 #16
+
+commit f05464272e24c6d80ef6cbc6325a4109fe44c6b9
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Sat Sep 5 18:05:33 2015 -0500
+
+    first implementation of collatz_eval; passes all tests
+
+commit 17b7c44f68134d65c600d53d2160c7720cb53f8e
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Thu Sep 3 20:06:48 2015 -0500
+
+    added more tests
+
+commit d4943db61b4be8918695ffe577224cfc6672d3dd
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Thu Sep 3 18:11:57 2015 -0500
+
+    commented out some files to make travis build
+
+commit 8c0980762f934a78fdcd12e3c4f563ee8c9efc46
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Thu Sep 3 13:29:42 2015 -0500
+
+    commented make check on travis file to let it build
+
+commit 8cfdfe7bfcb0b9a8bbefb9f0c03b4d88ced146ee
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Wed Sep 2 12:09:52 2015 -0500
+
+    corrected values to be tested against for collatz_solve
+
+commit 041ac8e280a1bb95c674327fc10f6ff9fd28ce2f
+Author: Charles Gong <chlsgong@gmail.com>
+Date:   Tue Sep 1 22:34:36 2015 -0500
+
+    changed correct values to be tested against
+
+commit 679ed1a76c3dfc0a112c673fb75738f74a8e1f23
+Author: Haoyu Gong <hcgong@cs.utexas.edu>
+Date:   Tue Sep 1 18:35:58 2015 -0500
+
+    collatz_eval only returns 1
+
+commit 6ec80574a3f47ec21ea9b7300053fc6dcd0d081a
+Author: Haoyu Gong <hcgong@cs.utexas.edu>
+Date:   Tue Sep 1 18:34:46 2015 -0500
+
+    collatz_eval only returns 1
+
+commit aa7bea4a1a5c73be99f8e7b1cbe45d344e7b6ee9
+Author: chlsgong <chlsgong@gmail.com>
+Date:   Mon Aug 31 20:04:55 2015 -0500
+
+    Initial commit
