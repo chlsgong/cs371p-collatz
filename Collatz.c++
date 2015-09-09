@@ -51,7 +51,6 @@ int collatz_eval (int i, int j) {
 
     #ifdef CACHE_SIZE
     vector<int> cache(CACHE_SIZE);
-    //int cache[CACHE_SIZE];
     for( ; i <= j; i++) {
         int a = i;
         int c = 1;
@@ -66,17 +65,12 @@ int collatz_eval (int i, int j) {
                 else
                     a = (3 * a) + 1;
                 ++c;
-                /*if(i == 999222)
-                    cout << a << endl;*/
             }
             cache[i] = c;
         }
         if(c > max)
             max = c;
     }
-    /*for(int k = 999168; k < 999500; k++) {
-        cout << k << " " << cache[k] << endl;
-    }*/
     #endif // CACHE_SIZE
 
     #ifndef CACHE_SIZE
